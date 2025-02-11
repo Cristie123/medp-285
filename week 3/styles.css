@@ -1,0 +1,50 @@
+/* html tag selector controlling body tag */
+body{
+background-color: #f7e3fc;
+margin: ssss0px;
+padding: 60px;
+}
+/* descendant selector, h2 is a child of main */
+main h2{
+color: #4805ff;
+}
+
+header h2{
+color:#ad004b;
+font-size: 40px;
+font-style:italic;
+font-weight:900;
+font-family:Arial, Helvetica, sans-serif;
+margin:0px 0px 30px 0px;
+}
+
+header h1{
+color:#ff4ee7;
+font-size: 60px;
+font-weight:900;
+font-family:Arial, Helvetica, sans-serif;
+margin:0px 0px 30px 0px;
+}
+nav a{
+font-weight:900;
+font-size: 30px;
+font-family:Arial, Helvetica, sans-serif;
+margin:30px 30px 30px 30px;
+text-decoration: none;
+color:#937aff;
+}
+nav a:hover{
+    color:black;
+}
+main img{
+width:400px
+
+}
+
+h2{
+    color:#ff4ee7;
+    font-size: 30px;
+    font-weight:900;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0px 0px 30px 0px;
+    }
