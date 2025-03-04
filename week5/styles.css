@@ -1,0 +1,68 @@
+
+
+/* START border-box fix */
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+/* END border-box fix */
+body {
+    background-color: rgb(249, 200, 238);
+    background-image: url('images/07.jpg');
+}
+div.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #f3e2f1;
+}
+    
+header,nav,main,aside,footer {
+
+    padding:20px;
+
+}
+
+header{
+background-color: azure;
+text-align: center;
+
+}
+
+nav{
+    background-color: rgb(250, 190, 195);
+    text-align: center;
+}
+
+nav li{
+    background-color: rgb(250, 190, 195);
+    display:inline-block;
+    width:100px;
+    height:30px;
+    text-align: center;
+}
+
+main{
+    background-color: rgb(255, 205, 237);
+    width:70%;
+    float:left;
+}
+
+section{
+    background-color: rgb(205, 255, 252);
+}
+
+aside{
+    background-color: rgb(227, 185, 121);
+    width:30%;
+    float:left;
+}
+
+footer{
+    background-color: rgb(199, 254, 204);
+    clear:both;
+}
