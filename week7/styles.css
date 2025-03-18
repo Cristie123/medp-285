@@ -1,0 +1,104 @@
+/* border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* remove margin and padding on body */
+  padding: 0;
+  margin: 0;
+  background-image: url('images/08.jpg');
+
+}
+
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+
+.wrapper {
+  background: white;
+  width: 80%;
+  margin: 0 auto;
+  /*grid layout parent*/
+  display:grid;
+  grid-template-columns: repeat(12,minmax(0,1fr));
+}
+
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: #ffcccc;
+  text-align: center;
+
+  font-family: "Rubik Bubbles", serif;
+  font-weight: 400;
+  font-style: normal;
+  /*span all 12 cols*/
+  grid-column: 1 / 13;
+ 
+
+  
+  
+}
+
+main {
+  background: #fce6e6;
+
+  font-family: "Sour Gummy";
+  font-optical-sizing: auto;
+
+
+  font-variation-settings:
+    "wdth" 100;
+  grid-column: 4 / 10;
+
+  
+}
+
+nav {
+  background:#f7dcd5;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+
+
+  font-variation-settings:
+    "wdth" 100;
+  grid-column: 1 / 4;
+
+}
+
+aside {
+  background: #f7ece9;
+  grid-column: 10 / 13;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+
+  font-variation-settings:
+    "wdth" 100;
+}
+
+main,
+nav,
+aside {
+  grid-row:2/4;
+}
+
+footer {
+  background:#faf8f7;
+  grid-column: 1 / 13;
+}
+
