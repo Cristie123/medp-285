@@ -1,0 +1,139 @@
+/* border-box fix */
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;}
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-transform: uppercase;
+  }
+  
+  .wrapper {
+    background: white;
+    width: 100%;
+    padding:0px;
+    margin: 10 auto;
+    display:grid;
+    grid-template-columns: repeat(12,minmax(0,1fr));
+  }
+  
+  
+  .wrapper>* {
+    padding: 5px;
+  }
+  
+  header {
+      background: #ffcccc;
+      text-align: center;
+
+        font-family: "Black Ops One", serif;
+        font-weight: 400;
+        font-style: normal;
+
+      
+      
+      height: 400px;
+      grid-column: 1 / 13;
+      background-image: url('images/34.jpg');
+  
+      background-size: cover; 
+      background-position: center;
+  
+      padding-top: 30px; 
+      font-size:40px;
+    }
+      
+    nav{
+      background-color:rgb(59, 34, 58);
+      padding:5px;   
+      text-align: center;   
+      text-decoration: underline;
+      text-transform: uppercase;
+      text-shadow: #ffcccc;
+      text-decoration-color: #faf8f7;
+      
+  
+      grid-column: 1 / 13;
+      grid-row: 2/4;
+      height: 80px;
+  
+  }
+  
+  .nav-list {
+      display: flex;
+      justify-content: center; 
+      list-style-type: none;
+      
+  }
+  
+
+  nav li{
+  display:inline;
+  margin:0px 60px;
+  font-size:22px;
+  
+  
+  }
+  nav a{
+      text-decoration:underline;
+  color:rgb(27, 0, 85);
+  color: #dfe5f6;
+  
+  }
+  
+  nav a:hover {
+      color:rgb(0, 0, 0); }
+  
+  main {
+    
+    background-color: #fbf0d5;
+  
+    font-family: "Sour Gummy";
+    font-optical-sizing: auto;
+  
+  
+    font-variation-settings:
+      "wdth" 100;
+    grid-column: 1 / 13;
+
+        font-family: "Aldrich", serif;
+        font-weight: 400;
+        font-style: normal;
+      
+  }
+  
+    .image-grid {
+      display: grid;                       
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;                            
+  }
+  
+  .image-grid img {
+      width: 100%;       
+      height:auto;                   
+      border-radius: 10px;                    
+  }
+  
+  
+  
+  
+  
+  footer {
+    background:#faf8f7;
+    grid-column: 1 / 13;
+  }
+  
+  
