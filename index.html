@@ -1,40 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Week 02</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
-        
-<header>
-    <h1>Mauve</h1>
-    <h2>An Exploration of Color</h2>
-</header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chill Café</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script>
+  document.addEventListener("mousemove", function(e) {
+    const dot = document.createElement("div");
+    dot.classList.add("sparkle");
+    dot.style.left = e.pageX + "px";
+    dot.style.top = e.pageY + "px";
+    document.body.appendChild(dot);
 
-<nav>
-    <a href="home.html">HOME</a>
-    <a href="history.html">HISTORY</a>
-    <a href="gallery.html">GALLERY</a>
-</nav>
+    setTimeout(() => dot.remove(), 500);
+  });
+</script>
 
-<main>
-    <h2>The History of Mauve</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CAT ADOPTION</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Meet Our cats</a></li>
+        <li><a href="match.html">Meet Your Match</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-            
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</blockquote>
-    <h2>Mauve Gallery</h2>
-    <p><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.figma.com%2Fcolors%2Fmauve%2F&psig=AOvVaw1vA43Wwi8dveFb-T9vZQ-f&ust=1738771093270000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPixxamxqosDFQAAAAAdAAAAABAR" target="blank">Google search for mauve images</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <div><img src="images/01.jpg" width="200"></div>
-    <div><img src="images/02.webp" width="200"></div>
-</main>
-
-<footer>
-    &copy;2025 Cristie Chong
-</footer>
-
-    </body>
-
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome!</h2>
+      <h1>Wanna adopt a cat?</h1>
+      <p class="subtitle">Opening Soon!</p>
+    </div>
+  </section>
+</body>
 </html>
