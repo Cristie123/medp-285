@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chill Café</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<script>
+  document.addEventListener("mousemove", function(e) {
+    const dot = document.createElement("div");
+    dot.classList.add("sparkle");
+    dot.style.left = e.pageX + "px";
+    dot.style.top = e.pageY + "px";
+    document.body.appendChild(dot);
+
+    setTimeout(() => dot.remove(), 500);
+  });
+</script>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">CAT ADOPTION</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Meet Our cats</a></li>
+        <li><a href="match.html">Meet Your Match</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome!</h2>
+      <h1>Wanna adopt a cat?</h1>
+      <p class="subtitle">Opening Soon!</p>
+    </div>
+  </section>
+</body>
+</html>
